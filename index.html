@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class = "grid-container">
+        <div class = "calculator-grid ">
+          <textarea type="text" id = "inputtext" placeholder="0" class="display" readonly></textarea>
+            <button onclick="calClear()">C</button>
+            <button onclick="removeLastDigit()">DEL</button>
+            <button></button>
+            <button onclick="displayContent('+')">+</button>
+            <button onclick="displayContent('7')">7</button>
+            <button onclick="displayContent('8')">8</button>
+            <button onclick="displayContent('9')">9</button>
+            <button onclick="displayContent('-')">-</button>
+            <button onclick="displayContent('4')">4</button>
+            <button onclick="displayContent('5')">5</button>
+            <button onclick="displayContent('6')">6</button>
+            <button onclick="displayContent('*')">*</button>
+            <button onclick="displayContent('1')">1</button>
+            <button onclick="displayContent('2')">2</button>
+            <button onclick="displayContent('3')">3</button>
+            <button onclick="displayContent('/')">/</button>
+            <button onclick="displayContent('00')">00</button>
+            <button onclick="displayContent('0')">0</button>
+            <button onclick="displayContent('.')">.</button>
+            <button onclick="calcOutput()" id="equal">=</button>
+        </div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>
